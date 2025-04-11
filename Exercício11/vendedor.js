@@ -1,0 +1,7 @@
+alert("Cálculo do Salário com Comissão")
+let salarioFixo = parseFloat(prompt("Digite o salário fixo do vendedor:"))
+let totalVendas = parseFloat(prompt("Digite o valor total de vendas do vendedor:"))
+let carrosVendidos = parseInt(prompt("Digite o número de carros vendidos pelo vendedor:"))
+let valorCarro = parseFloat(prompt("Digite o valor de cada carro vendido:"))
+let salarioTotal = salarioFixo + (totalVendas * 0.05) + (carrosVendidos * valorCarro)
+alert(`O salário total do vendedor é: ${salarioTotal.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`)

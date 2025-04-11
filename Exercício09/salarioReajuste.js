@@ -1,0 +1,5 @@
+alert("Reajuste Salarial!")
+let salario = parseFloat(prompt("Digite o valor do seu salário:"))
+let percentual = parseFloat(prompt("Digite o percentual do reajuste:"))
+let salarioNovo = (salario + (percentual / 100 * salario)).toLocaleString("pt-BR", {style:"currency", currency:"BRL"})
+alert(`O valor do seu novo salário é: ${salarioNovo}`)
